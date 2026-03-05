@@ -1,4 +1,5 @@
 Swiggy Food Delivery Analytics | Data Warehouse & Business Intelligence
+
 📊 Project Overview
 
 This project analyzes Swiggy food delivery data (165K+ records) by building a Data Warehouse using MySQL and creating interactive business dashboards in Power BI.
