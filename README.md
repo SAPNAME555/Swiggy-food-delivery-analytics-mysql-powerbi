@@ -4,8 +4,7 @@ Data Warehouse | SQL Analytics | Business Intelligence
 📌 Project Overview
 
 This project builds a scalable analytics solution for food delivery data, transforming raw operational records into a structured data warehouse optimized for business intelligence and decision-making.
-
-Using 165K+ order records, the project demonstrates how real-world transactional data can be transformed into actionable insights for business strategy.
+Using 195K+ order records, the project demonstrates how real-world transactional data can be transformed into actionable insights for business strategy.
 
 The pipeline includes:
 
@@ -60,81 +59,34 @@ The key objectives of this project were:
 
 🧠 Project Architecture
 
-Raw CSV Data
-      ↓
-Data Ingestion (MySQL)
-      ↓
-Data Cleaning & Validation
-      ↓
-Dimensional Modeling (Star Schema)
-      ↓
-Fact + Dimension Tables
-      ↓
-SQL Analytics Queries
-      ↓
-Power BI Dashboard
-
+Data Source (CSV Dataset)
+        ↓
+Database & Data Warehouse (MySQL)
+        ↓
+Star Schema (Fact & Dimension Tables)
+        ↓
+Analytics & KPIs (SQL Queries)
+        ↓
+Visualization Dashboard (Power BI)
 
 ⚙️ Data Pipeline
 
-1️⃣ Data Ingestion
+CSV Dataset
+   ↓
+Data Import into MySQL
+   ↓
+Data Cleaning (Null checks, duplicates removal)
+   ↓
+Data Transformation (Date conversion, indexing)
+   ↓
+Data Warehouse Loading (Fact & Dimension tables)
+   ↓
+KPI Queries & Analysis
+   ↓
+Power BI Dashboard
 
-Raw CSV data was imported into MySQL.
 
-Example:
 
-LOAD DATA INFILE 'Swiggy_Data.csv'
-INTO TABLE swiggy_data1
-FIELDS TERMINATED BY ','
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-
-2️⃣ Data Cleaning & Validation
-
-Multiple checks were performed to ensure data quality.
-
-Data Quality Checks
-
-NULL value detection
-
-Blank string validation
-
-Duplicate detection
-
-Data type corrections
-
-Example:
-
-SELECT
-SUM(state IS NULL) AS state_nulls,
-SUM(city IS NULL) AS city_nulls
-FROM swiggy_data1;
-3️⃣ Data Transformation
-
-Raw transactional data was transformed into dimensional tables.
-
-Date Dimension Example
-INSERT INTO dim_date
-SELECT DISTINCT
-order_date,
-YEAR(order_date),
-MONTH(order_date),
-MONTHNAME(order_date),
-QUARTER(order_date),
-DAY(order_date),
-WEEK(order_date,1)
-FROM swiggy_data1;
-4️⃣ Performance Optimization
-
-Indexes were created to improve query performance.
-
-Example:
-
-CREATE INDEX idx_swiggy_date
-ON swiggy_data1(order_date);
-
-This significantly improves join performance and aggregation speed.
 
 🗂 Dataset
 Source: Food delivery dataset (Swiggy)
@@ -261,6 +213,9 @@ Dashboard file:dashboard/swiggy_powerbi_dashboard.pbix
 ✔Dish-level analysis shows that a limited number of popular dishes drive repeat customer orders, suggesting the importance of optimized menu offerings.
 
 ✔Customer ratings are predominantly above 4 stars, indicating generally high service quality across restaurants on the platform.
+
+
+ER Diagram
 
 📷 Dashboard Preview
 
