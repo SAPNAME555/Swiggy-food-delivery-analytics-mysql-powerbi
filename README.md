@@ -1,33 +1,61 @@
-Swiggy Food Delivery Analytics | Data Warehouse & Business Intelligence
+🍽️ Swiggy Food Delivery Analytics
+Data Warehouse | SQL Analytics | Business Intelligence
+📌 Project Overview
 
-📊 Project Overview
+This project builds a scalable analytics solution for food delivery data, transforming raw operational records into a structured data warehouse optimized for business intelligence and decision-making.
 
-This project analyzes Swiggy food delivery data (165K+ records) by building a Data Warehouse using MySQL and creating interactive business dashboards in Power BI.
+Using 165K+ order records, the project demonstrates how real-world transactional data can be transformed into actionable insights for business strategy.
 
-The objective was to simulate a real-world data engineering + analytics workflow including:
+The pipeline includes:
 
--Data ingestion
+Data ingestion
 
--Data cleaning
+Data cleaning & validation
 
--Data modeling (Star Schema)
+Dimensional modeling
 
--KPI generation
+Data warehouse design
 
--Business analysis
+KPI generation
 
--Data visualization
+Business intelligence reporting
 
-The project demonstrates end-to-end data analytics skills used in industry.
+The final system enables deep insights into revenue trends, customer behavior, restaurant performance, and geographic demand patterns.
 
-🚀 Business Problem
--Food delivery platforms like Swiggy generate large volumes of data.Companies need analytics to answer questions such as:
--Which cities generate the most orders?
--Which restaurants and dishes are most popular?
--What price ranges customers prefer
--Monthly order trends
--Revenue contribution by state
-This project builds a data warehouse and analytics pipeline to answer these questions.
+🧠 Business Problem
+-Food delivery platforms like Swiggy generate large volumes of data.To scale efficiently, the business must answer critical questions:
+
+Which cities generate the most revenue?
+
+What food categories drive the highest demand?
+
+Which restaurants perform best?
+
+How do customer spending patterns vary?
+
+Are there seasonal or time-based ordering trends?
+
+However, raw transactional data is not optimized for analytics.
+
+Without proper data modeling:
+
+Queries become slow
+
+Business metrics are inconsistent
+
+Insights are difficult to extract
+
+This project solves the problem by building a data warehouse architecture and generating business KPIs through analytical SQL queries.
+
+🎯 Project Objectives
+
+The key objectives of this project were:
+
+1️⃣ Transform raw order data into a clean, structured dataset
+2️⃣ Design a Star Schema Data Warehouse for fast analytical queries
+3️⃣ Build SQL queries to generate business KPIs and insights
+4️⃣ Enable interactive dashboard reporting using Power BI
+
 
 🧠 Project Architecture
 Raw Data (CSV)
@@ -45,11 +73,70 @@ Fact + Dimension Tables
 Business KPI Queries
         │
         ▼
-Power BI Dashboard
+Power BI Dashboard 
+
+⚙️ Data Pipeline
+1️⃣ Data Ingestion
+
+Raw CSV data was imported into MySQL.
+
+Example:
+
+LOAD DATA INFILE 'Swiggy_Data.csv'
+INTO TABLE swiggy_data1
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+2️⃣ Data Cleaning & Validation
+
+Multiple checks were performed to ensure data quality.
+
+Data Quality Checks
+
+NULL value detection
+
+Blank string validation
+
+Duplicate detection
+
+Data type corrections
+
+Example:
+
+SELECT
+SUM(state IS NULL) AS state_nulls,
+SUM(city IS NULL) AS city_nulls
+FROM swiggy_data1;
+3️⃣ Data Transformation
+
+Raw transactional data was transformed into dimensional tables.
+
+Date Dimension Example
+INSERT INTO dim_date
+SELECT DISTINCT
+order_date,
+YEAR(order_date),
+MONTH(order_date),
+MONTHNAME(order_date),
+QUARTER(order_date),
+DAY(order_date),
+WEEK(order_date,1)
+FROM swiggy_data1;
+4️⃣ Performance Optimization
+
+Indexes were created to improve query performance.
+
+Example:
+
+CREATE INDEX idx_swiggy_date
+ON swiggy_data1(order_date);
+
+This significantly improves join performance and aggregation speed.
 
 🗂 Dataset
 Source: Food delivery dataset (Swiggy)
-Records: 195,000+
+Records: 197,000+
 Fields: 10
 Key columns:
 -State
@@ -100,16 +187,23 @@ The script includes:
 -Index optimization
 -Star schema creation
 
-KPI queries
 📈 Key Business KPIs
+
+The data warehouse enables fast calculation of critical metrics.
+
 Total Orders
-SELECT COUNT(*) FROM fact_swiggy_orders;
+SELECT COUNT(*) AS total_orders
+FROM fact_swiggy_orders;
 Total Revenue
-SELECT SUM(price_inr) FROM fact_swiggy_orders;
+SELECT ROUND(SUM(price_inr)/1000000,2)
+AS total_revenue_inr_million
+FROM fact_swiggy_orders;
 Average Dish Price
-SELECT AVG(price_inr) FROM fact_swiggy_orders;
+SELECT ROUND(AVG(price_inr),2)
+FROM fact_swiggy_orders;
 Average Rating
-SELECT AVG(rating) FROM fact_swiggy_orders;
+SELECT ROUND(AVG(rating),2)
+FROM fact_swiggy_orders;
 
 🔍 Business Analysis Performed
 📅 Time Analysis
