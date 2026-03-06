@@ -1,5 +1,6 @@
 🍽️ Swiggy Food Delivery Analytics
 Data Warehouse | SQL Analytics | Business Intelligence
+
 📌 Project Overview
 
 This project builds a scalable analytics solution for food delivery data, transforming raw operational records into a structured data warehouse optimized for business intelligence and decision-making.
@@ -58,24 +59,24 @@ The key objectives of this project were:
 
 
 🧠 Project Architecture
-Raw Data (CSV)
-        │
-        ▼
-MySQL Data Cleaning
-        │
-        ▼
-Star Schema Data Warehouse
-        │
-        ▼
+
+Raw CSV Data
+      ↓
+Data Ingestion (MySQL)
+      ↓
+Data Cleaning & Validation
+      ↓
+Dimensional Modeling (Star Schema)
+      ↓
 Fact + Dimension Tables
-        │
-        ▼
-Business KPI Queries
-        │
-        ▼
-Power BI Dashboard 
+      ↓
+SQL Analytics Queries
+      ↓
+Power BI Dashboard
+
 
 ⚙️ Data Pipeline
+
 1️⃣ Data Ingestion
 
 Raw CSV data was imported into MySQL.
@@ -88,6 +89,7 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
+
 2️⃣ Data Cleaning & Validation
 
 Multiple checks were performed to ensure data quality.
@@ -137,6 +139,7 @@ This significantly improves join performance and aggregation speed.
 🗂 Dataset
 Source: Food delivery dataset (Swiggy)
 Records: 197,000+
+
 Fields: 10
 Key columns:
 -State
@@ -151,12 +154,13 @@ Key columns:
 -Rating Count
 
 🛠 Tech Stack
-Tool	Purpose
-MySQL 8.0	Data cleaning & warehouse creation
-SQL	Data transformation & KPI queries
-Star Schema	Data warehouse design
-Power BI	Interactive dashboard
-GitHub	Project portfolio
+Tech Stack
+||Tools	||Techniques / Usage
+||MySQL 8.0	||Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation
+||SQL	||Joins, aggregations, KPI queries, duplicate detection, and analytical business queries
+||Star Schema Modeling	||Fact and dimension table design for analytical data warehouse
+||Microsoft Power BI	||Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics
+||github   ||Repository hosting and project documentation
 
 🏗 Data Warehouse Design
 A Star Schema was created to optimize analytical queries.
@@ -235,21 +239,28 @@ Orders analyzed across price ranges:
 -Category level average rating
 
 📊 Power BI Dashboard
-The Power BI dashboard includes:
-✔ KPI overview
-✔ City level analysis
-✔ Order trend visualization
-✔ Category performance
-✔ Restaurant performance
+
+✔Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
+✔Implemented data modeling using relationships between fact and dimension tables.
+✔Developed DAX measures for KPIs such as Total Orders, Revenue, Average Price, and Ratings.
+✔Enabled interactive filtering using slicers and visuals.
 
 Dashboard file:dashboard/swiggy_powerbi_dashboard.pbix
 
 📌 Key Insights
-Some interesting findings from the analysis:
--A small number of cities generate majority of orders
--Certain categories dominate order volume
--Most orders fall in the ₹200-₹299 price range
--Highly rated dishes correlate with higher order counts
+✔Analysis of 165K+ food delivery transactions enabled evaluation of customer ordering behavior, restaurant performance, and pricing patterns across multiple cities.
+
+✔Mid-range priced meals (₹100–₹299) generate the highest order volume, indicating that affordability plays a major role in customer purchasing decisions.
+
+✔Food delivery demand is highly concentrated in major urban cities, which contribute the largest share of both orders and revenue.
+
+✔A small group of top-performing restaurants captures a significant portion of total orders, highlighting strong competition and the importance of ratings and pricing strategies.
+
+✔Certain cuisine categories consistently attract higher order volumes and maintain strong customer ratings, indicating clear consumer preferences.
+
+✔Dish-level analysis shows that a limited number of popular dishes drive repeat customer orders, suggesting the importance of optimized menu offerings.
+
+✔Customer ratings are predominantly above 4 stars, indicating generally high service quality across restaurants on the platform.
 
 📷 Dashboard Preview
 
