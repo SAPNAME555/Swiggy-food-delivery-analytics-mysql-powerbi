@@ -1,7 +1,7 @@
 🍔Swiggy Food Delivery Analytics
 Data Warehouse | SQL Analytics | Business Intelligence
 
-📌 Project Overview
+📌 PROJECT OVERVIEW
 
 This project builds a scalable analytics solution for food delivery data, transforming raw operational records into a structured data warehouse optimized for business intelligence and decision-making.
 Using 195K+ order records, the project demonstrates how real-world transactional data can be transformed into actionable insights for business strategy.
@@ -24,7 +24,7 @@ The pipeline includes:
 The final system enables deep insights into revenue trends, customer behavior, restaurant performance, and geographic demand patterns.
 
 
-🧠 Business Problem
+🧠 BUSINESS PROBLEM
 
 Food delivery platforms like Swiggy generate large volumes of data.To scale efficiently, the business must answer critical questions:
 
@@ -51,7 +51,7 @@ However, raw transactional data is not optimized for analytics.
 This project solves the problem by building a data warehouse architecture and generating business KPIs through analytical SQL queries.
 
 
-🎯 Project Objectives
+🎯 PROJECT OBJECTIVES
 
 -Build a star schema data warehouse to support efficient analytics on food delivery data.
 
@@ -64,7 +64,7 @@ This project solves the problem by building a data warehouse architecture and ge
 -Develop a Power BI dashboard to visualize insights and support data-driven decisions.
 
 
-🗂 Dataset
+🗂 DATASET
 
 -Source: Food delivery dataset (Swiggy)
 
@@ -97,7 +97,7 @@ Key columns:
 -Rating Count
 
 
-🧠 Project Architecture
+🧠 PROJECT ARCHITECTURE
 
 Data Source (CSV Dataset)
         ↓
@@ -110,7 +110,7 @@ Analytics & KPIs (SQL Queries)
 Visualization Dashboard (Power BI)
 
 
-⚙️ Data Pipeline
+⚙️ DATA PIPELINE
 
 CSV Dataset
    ↓
@@ -127,7 +127,7 @@ KPI Queries & Analysis
 Power BI Dashboard
 
 
-🛠 Tech Stack
+🛠 TECH STACK
 
 Tech Stack
 ||Tools	||Techniques / Usage
@@ -138,7 +138,7 @@ Tech Stack
 ||github   ||Repository hosting and project documentation
 
 
-🏗 Data Warehouse Design
+🏗 DATA WAREHOUSE DESIGN
 
 A Star Schema was created to optimize analytical queries.
 
@@ -172,7 +172,7 @@ Contains:
 This structure improves query performance and scalability.
 
 
-📂 SQL Implementation
+📂 SQL IMPLEMENTATION
 
 The complete SQL implementation is available here:
 
@@ -193,7 +193,7 @@ The script includes:
 -Star schema creation
 
 
-📊Key Business KPIs
+📊KEY BUSINESS KPIs
 
 The data warehouse enables fast calculation of critical metrics.
 
@@ -224,7 +224,7 @@ SELECT ROUND(AVG(rating),2)
 FROM fact_swiggy_orders;
 
 
-🔍 Business Analysis Performed
+🔍 BUSINESS ANALYSIS PERFORMED
 
 
 📅 Time Analysis
@@ -277,7 +277,7 @@ Orders analyzed across price ranges:
 -Category level average rating
 
 
-📊 Power BI Dashboard
+📊 POWER BI DASHBOARD
 
 ✔Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
 
@@ -288,7 +288,7 @@ Orders analyzed across price ranges:
 ✔Enabled interactive filtering using slicers and visuals.
 
 
-📌 Key Insights
+📌 KEY INSIGHTS
 
 ✔Analysis of 165K+ food delivery transactions enabled evaluation of customer ordering behavior, restaurant performance, and pricing patterns across multiple cities.
 
@@ -306,7 +306,7 @@ purchasing decisions.
 ✔Customer ratings are predominantly above 4 stars, indicating generally high service quality across restaurants on the platform.
 
 
-🎯 Skills Demonstrated
+🎯 SKILLS DEMONSTRATED
 
 -SQL Data Cleaning
 
@@ -327,9 +327,9 @@ purchasing decisions.
 -Data Storytelling
 
 
-👤 Author
+👤 AUTHOR
 
- Sapna Mehra
+ SAPNA MEHRA
 
 Aspiring Data Analyst / Data Engineer
 
