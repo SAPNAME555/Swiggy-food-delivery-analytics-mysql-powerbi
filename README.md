@@ -18,6 +18,7 @@ The final system enables deep insights into revenue trends, customer behavior, r
 🧠 Business Problem
 
 Food delivery platforms like Swiggy generate large volumes of data.To scale efficiently, the business must answer critical questions:
+
 📌Which cities generate the most revenue?
 
 📌What food categories drive the highest demand?
@@ -27,6 +28,7 @@ Food delivery platforms like Swiggy generate large volumes of data.To scale effi
 📌How do customer spending patterns vary?
 
 📌Are there seasonal or time-based ordering trends?
+
 However, raw transactional data is not optimized for analytics.
 -Without proper data modeling:
 -Queries become slow
