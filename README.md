@@ -1,7 +1,6 @@
 🍔Swiggy Food Delivery Analytics
 Data Warehouse | SQL Analytics | Business Intelligence
 
-
 📌 Project Overview
 
 This project builds a scalable analytics solution for food delivery data, transforming raw operational records into a structured data warehouse optimized for business intelligence and decision-making.
