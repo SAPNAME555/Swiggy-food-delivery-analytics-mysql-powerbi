@@ -49,12 +49,28 @@ This project solves the problem by building a data warehouse architecture and ge
 
 🎯 Project Objectives
 
-The key objectives of this project were:
+Build a star schema data warehouse to support efficient analytics on food delivery data.
+Clean and transform raw transactional data into structured fact and dimension tables.
+Generate key business KPIs using optimized SQL queries.
+Analyze trends across time, location, restaurants, and cuisine categories.
+Develop a Power BI dashboard to visualize insights and support data-driven decisions.
 
-1️⃣ Transform raw order data into a clean, structured dataset
-2️⃣ Design a Star Schema Data Warehouse for fast analytical queries
-3️⃣ Build SQL queries to generate business KPIs and insights
-4️⃣ Enable interactive dashboard reporting using Power BI
+🗂 Dataset
+Source: Food delivery dataset (Swiggy)
+Records: 197,000+
+Structured Data: 1,65,000+
+Fields: 10
+Key columns:
+-State
+-City
+-Order Date
+-Restaurant Name
+-Location
+-Category
+-Dish Name
+-Price
+-Rating
+-Rating Count
 
 
 🧠 Project Architecture
@@ -88,22 +104,7 @@ Power BI Dashboard
 
 
 
-🗂 Dataset
-Source: Food delivery dataset (Swiggy)
-Records: 197,000+
 
-Fields: 10
-Key columns:
--State
--City
--Order Date
--Restaurant Name
--Location
--Category
--Dish Name
--Price
--Rating
--Rating Count
 
 🛠 Tech Stack
 Tech Stack
@@ -144,9 +145,7 @@ The script includes:
 -Star schema creation
 
 📈 Key Business KPIs
-
 The data warehouse enables fast calculation of critical metrics.
-
 Total Orders
 SELECT COUNT(*) AS total_orders
 FROM fact_swiggy_orders;
@@ -191,7 +190,6 @@ Orders analyzed across price ranges:
 -Category level average rating
 
 📊 Power BI Dashboard
-
 ✔Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
 ✔Implemented data modeling using relationships between fact and dimension tables.
 ✔Developed DAX measures for KPIs such as Total Orders, Revenue, Average Price, and Ratings.
@@ -201,31 +199,12 @@ Dashboard file:dashboard/swiggy_powerbi_dashboard.pbix
 
 📌 Key Insights
 ✔Analysis of 165K+ food delivery transactions enabled evaluation of customer ordering behavior, restaurant performance, and pricing patterns across multiple cities.
-
 ✔Mid-range priced meals (₹100–₹299) generate the highest order volume, indicating that affordability plays a major role in customer purchasing decisions.
-
 ✔Food delivery demand is highly concentrated in major urban cities, which contribute the largest share of both orders and revenue.
-
 ✔A small group of top-performing restaurants captures a significant portion of total orders, highlighting strong competition and the importance of ratings and pricing strategies.
-
 ✔Certain cuisine categories consistently attract higher order volumes and maintain strong customer ratings, indicating clear consumer preferences.
-
 ✔Dish-level analysis shows that a limited number of popular dishes drive repeat customer orders, suggesting the importance of optimized menu offerings.
-
 ✔Customer ratings are predominantly above 4 stars, indicating generally high service quality across restaurants on the platform.
-
-
-ER Diagram
-
-📷 Dashboard Preview
-
-(Add screenshots here)
-
-Example:
-
-images/dashboard_overview.png
-images/city_analysis.png
-
 
 🎯 Skills Demonstrated
 -SQL Data Cleaning
@@ -234,13 +213,12 @@ images/city_analysis.png
 -Index Optimization
 -Analytical SQL
 -Business KPI Analysis
+-Data modeling and DAX calculations
 -Power BI Dashboarding
 -Data Storytelling
 
 👤 Author
-
-Sapna
-
+ Sapna Mehra
 Aspiring Data Analyst / Data Engineer
 
 Skills:
