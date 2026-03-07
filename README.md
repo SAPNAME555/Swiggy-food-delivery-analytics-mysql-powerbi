@@ -197,13 +197,13 @@ The script includes:
 
 The data warehouse enables fast calculation of critical metrics.
 
--Total Orders
+1.Total Orders
 
 SELECT COUNT(*) AS total_orders
 
 FROM fact_swiggy_orders;
 
--Total Revenue
+2.Total Revenue
 
 SELECT ROUND(SUM(price_inr)/1000000,2)
 
@@ -211,13 +211,13 @@ AS total_revenue_inr_million
 
 FROM fact_swiggy_orders;
 
--Average Dish Price
+3.Average Dish Price
 
 SELECT ROUND(AVG(price_inr),2)
 
 FROM fact_swiggy_orders;
 
--Average Rating
+4.Average Rating
 
 SELECT ROUND(AVG(rating),2)
 
