@@ -2,6 +2,7 @@
 Data Warehouse | SQL Analytics | Business Intelligence
 
 📌 Project Overview
+
 This project builds a scalable analytics solution for food delivery data, transforming raw operational records into a structured data warehouse optimized for business intelligence and decision-making.
 Using 195K+ order records, the project demonstrates how real-world transactional data can be transformed into actionable insights for business strategy.
 The pipeline includes:
@@ -52,6 +53,7 @@ This project solves the problem by building a data warehouse architecture and ge
 
 
 🗂 Dataset
+
 -Source: Food delivery dataset (Swiggy)
 -Records: 197,000+
 -Structured Data: 1,65,000+
@@ -83,6 +85,7 @@ Visualization Dashboard (Power BI)
 
 
 ⚙️ Data Pipeline
+
 CSV Dataset
    ↓
 Data Import into MySQL
@@ -99,6 +102,7 @@ Power BI Dashboard
 
 
 🛠 Tech Stack
+
 Tech Stack
 ||Tools	||Techniques / Usage
 ||MySQL 8.0||Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation
@@ -109,6 +113,7 @@ Tech Stack
 
 
 🏗 Data Warehouse Design
+
 A Star Schema was created to optimize analytical queries.
 1.Dimension Tables
 1.dim_date
@@ -126,7 +131,9 @@ Contains:
 -Foreign keys to dimensions
 This structure improves query performance and scalability.
 
+
 📂 SQL Implementation
+
 The complete SQL implementation is available here:
 📄 SQL Script: swiggy_data_pro1.mysql
 The script includes:
@@ -137,7 +144,9 @@ The script includes:
 -Index optimization
 -Star schema creation
 
+
 📈 Key Business KPIs
+
 The data warehouse enables fast calculation of critical metrics.
 📊Total Orders
 SELECT COUNT(*) AS total_orders
@@ -153,7 +162,9 @@ FROM fact_swiggy_orders;
 SELECT ROUND(AVG(rating),2)
 FROM fact_swiggy_orders;
 
+
 🔍 Business Analysis Performed
+
 📅 Time Analysis
 -Monthly order trends
 -Quarterly growth
@@ -182,7 +193,9 @@ Orders analyzed across price ranges:
 -Distribution of dish ratings
 -Category level average rating
 
+
 📊 Power BI Dashboard
+
 ✔Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
 ✔Implemented data modeling using relationships between fact and dimension tables.
 ✔Developed DAX measures for KPIs such as Total Orders, Revenue, Average Price, and Ratings.
@@ -190,6 +203,7 @@ Orders analyzed across price ranges:
 
 
 📌 Key Insights
+
 ✔Analysis of 165K+ food delivery transactions enabled evaluation of customer ordering behavior, restaurant performance, and pricing patterns across multiple cities.
 ✔Mid-range priced meals (₹100–₹299) generate the highest order volume, indicating that affordability plays a major role in customer purchasing decisions.
 ✔Food delivery demand is highly concentrated in major urban cities, which contribute the largest share of both orders and revenue.
@@ -198,7 +212,9 @@ Orders analyzed across price ranges:
 ✔Dish-level analysis shows that a limited number of popular dishes drive repeat customer orders, suggesting the importance of optimized menu offerings.
 ✔Customer ratings are predominantly above 4 stars, indicating generally high service quality across restaurants on the platform.
 
+
 🎯 Skills Demonstrated
+
 -SQL Data Cleaning
 -Data Warehouse Design
 -Star Schema Modeling
@@ -208,6 +224,7 @@ Orders analyzed across price ranges:
 -Data modeling and DAX calculations
 -Power BI Dashboarding
 -Data Storytelling
+
 
 👤 Author
  Sapna Mehra
