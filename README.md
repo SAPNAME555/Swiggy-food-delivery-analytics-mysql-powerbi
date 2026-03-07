@@ -5,61 +5,45 @@ Data Warehouse | SQL Analytics | Business Intelligence
 
 This project builds a scalable analytics solution for food delivery data, transforming raw operational records into a structured data warehouse optimized for business intelligence and decision-making.
 Using 195K+ order records, the project demonstrates how real-world transactional data can be transformed into actionable insights for business strategy.
-
 The pipeline includes:
-
-Data ingestion
-
-Data cleaning & validation
-
-Dimensional modeling
-
-Data warehouse design
-
-KPI generation
-
-Business intelligence reporting
+-Data ingestion
+-Data cleaning & validation
+-Dimensional modeling
+-Data warehouse design
+-KPI generation
+-Business intelligence reporting
 
 The final system enables deep insights into revenue trends, customer behavior, restaurant performance, and geographic demand patterns.
 
 🧠 Business Problem
--Food delivery platforms like Swiggy generate large volumes of data.To scale efficiently, the business must answer critical questions:
 
-Which cities generate the most revenue?
-
-What food categories drive the highest demand?
-
-Which restaurants perform best?
-
-How do customer spending patterns vary?
-
-Are there seasonal or time-based ordering trends?
-
+Food delivery platforms like Swiggy generate large volumes of data.To scale efficiently, the business must answer critical questions:
+📌Which cities generate the most revenue?
+📌What food categories drive the highest demand?
+📌Which restaurants perform best?
+📌How do customer spending patterns vary?
+📌Are there seasonal or time-based ordering trends?
 However, raw transactional data is not optimized for analytics.
-
-Without proper data modeling:
-
-Queries become slow
-
-Business metrics are inconsistent
-
-Insights are difficult to extract
+-Without proper data modeling:
+-Queries become slow
+-Business metrics are inconsistent
+-Insights are difficult to extract
 
 This project solves the problem by building a data warehouse architecture and generating business KPIs through analytical SQL queries.
 
 🎯 Project Objectives
 
-Build a star schema data warehouse to support efficient analytics on food delivery data.
-Clean and transform raw transactional data into structured fact and dimension tables.
-Generate key business KPIs using optimized SQL queries.
-Analyze trends across time, location, restaurants, and cuisine categories.
-Develop a Power BI dashboard to visualize insights and support data-driven decisions.
+-Build a star schema data warehouse to support efficient analytics on food delivery data.
+-Clean and transform raw transactional data into structured fact and dimension tables.
+-Generate key business KPIs using optimized SQL queries.
+-Analyze trends across time, location, restaurants, and cuisine categories.
+-Develop a Power BI dashboard to visualize insights and support data-driven decisions.
 
 🗂 Dataset
-Source: Food delivery dataset (Swiggy)
-Records: 197,000+
-Structured Data: 1,65,000+
-Fields: 10
+-Source: Food delivery dataset (Swiggy)
+-Records: 197,000+
+-Structured Data: 1,65,000+
+-Fields: 10
 Key columns:
 -State
 -City
@@ -101,15 +85,10 @@ KPI Queries & Analysis
    ↓
 Power BI Dashboard
 
-
-
-
-
-
 🛠 Tech Stack
 Tech Stack
 ||Tools	||Techniques / Usage
-||MySQL 8.0	||Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation
+||MySQL 8.0||Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation
 ||SQL	||Joins, aggregations, KPI queries, duplicate detection, and analytical business queries
 ||Star Schema Modeling	||Fact and dimension table design for analytical data warehouse
 ||Microsoft Power BI	||Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics
@@ -146,17 +125,17 @@ The script includes:
 
 📈 Key Business KPIs
 The data warehouse enables fast calculation of critical metrics.
-Total Orders
+📊Total Orders
 SELECT COUNT(*) AS total_orders
 FROM fact_swiggy_orders;
-Total Revenue
+📊Total Revenue
 SELECT ROUND(SUM(price_inr)/1000000,2)
 AS total_revenue_inr_million
 FROM fact_swiggy_orders;
-Average Dish Price
+📊Average Dish Price
 SELECT ROUND(AVG(price_inr),2)
 FROM fact_swiggy_orders;
-Average Rating
+📊Average Rating
 SELECT ROUND(AVG(rating),2)
 FROM fact_swiggy_orders;
 
@@ -195,7 +174,6 @@ Orders analyzed across price ranges:
 ✔Developed DAX measures for KPIs such as Total Orders, Revenue, Average Price, and Ratings.
 ✔Enabled interactive filtering using slicers and visuals.
 
-Dashboard file:dashboard/swiggy_powerbi_dashboard.pbix
 
 📌 Key Insights
 ✔Analysis of 165K+ food delivery transactions enabled evaluation of customer ordering behavior, restaurant performance, and pricing patterns across multiple cities.
