@@ -5,7 +5,9 @@ Data Warehouse | SQL Analytics | Business Intelligence
 
 This project builds a scalable analytics solution for food delivery data, transforming raw operational records into a structured data warehouse optimized for business intelligence and decision-making.
 Using 195K+ order records, the project demonstrates how real-world transactional data can be transformed into actionable insights for business strategy.
+
 The pipeline includes:
+
 -Data ingestion
 -Data cleaning & validation
 -Dimensional modeling
