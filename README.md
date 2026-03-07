@@ -193,17 +193,17 @@ The script includes:
 -Star schema creation
 
 
-📈 Key Business KPIs
+📊Key Business KPIs
 
 The data warehouse enables fast calculation of critical metrics.
 
-📊Total Orders
+-Total Orders
 
 SELECT COUNT(*) AS total_orders
 
 FROM fact_swiggy_orders;
 
-📊Total Revenue
+-Total Revenue
 
 SELECT ROUND(SUM(price_inr)/1000000,2)
 
@@ -211,13 +211,13 @@ AS total_revenue_inr_million
 
 FROM fact_swiggy_orders;
 
-📊Average Dish Price
+-Average Dish Price
 
 SELECT ROUND(AVG(price_inr),2)
 
 FROM fact_swiggy_orders;
 
-📊Average Rating
+-Average Rating
 
 SELECT ROUND(AVG(rating),2)
 
