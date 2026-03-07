@@ -15,6 +15,7 @@ The pipeline includes:
 
 The final system enables deep insights into revenue trends, customer behavior, restaurant performance, and geographic demand patterns.
 
+
 🧠 Business Problem
 
 Food delivery platforms like Swiggy generate large volumes of data.To scale efficiently, the business must answer critical questions:
@@ -37,13 +38,19 @@ However, raw transactional data is not optimized for analytics.
 
 This project solves the problem by building a data warehouse architecture and generating business KPIs through analytical SQL queries.
 
+
 🎯 Project Objectives
 
 -Build a star schema data warehouse to support efficient analytics on food delivery data.
+
 -Clean and transform raw transactional data into structured fact and dimension tables.
+
 -Generate key business KPIs using optimized SQL queries.
+
 -Analyze trends across time, location, restaurants, and cuisine categories.
+
 -Develop a Power BI dashboard to visualize insights and support data-driven decisions.
+
 
 🗂 Dataset
 -Source: Food delivery dataset (Swiggy)
@@ -75,8 +82,8 @@ Analytics & KPIs (SQL Queries)
         ↓
 Visualization Dashboard (Power BI)
 
-⚙️ Data Pipeline
 
+⚙️ Data Pipeline
 CSV Dataset
    ↓
 Data Import into MySQL
@@ -91,6 +98,7 @@ KPI Queries & Analysis
    ↓
 Power BI Dashboard
 
+
 🛠 Tech Stack
 Tech Stack
 ||Tools	||Techniques / Usage
@@ -99,6 +107,7 @@ Tech Stack
 ||Star Schema Modeling	||Fact and dimension table design for analytical data warehouse
 ||Microsoft Power BI	||Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics
 ||github   ||Repository hosting and project documentation
+
 
 🏗 Data Warehouse Design
 A Star Schema was created to optimize analytical queries.
