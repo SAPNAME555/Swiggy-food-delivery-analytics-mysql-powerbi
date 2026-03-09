@@ -135,7 +135,7 @@ Tech Stack
 |SQL	|Joins, aggregations, KPI queries, duplicate detection, and analytical business queries|
 |Star Schema Modeling	|Fact and dimension table design for analytical data warehouse|
 |Microsoft Power BI	|Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics|
-|github   |Repository hosting and project documentation|
+|Github   |Repository hosting and project documentation|
 
 
 🏗 DATA WAREHOUSE DESIGN
