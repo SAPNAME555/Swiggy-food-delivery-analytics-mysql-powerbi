@@ -96,7 +96,7 @@ Key columns:
 
 
 🧠 PROJECT ARCHITECTURE
-
+```
 Data Source (CSV Dataset)
         ↓
 Database & Data Warehouse (MySQL)
@@ -106,10 +106,11 @@ Star Schema (Fact & Dimension Tables)
 Analytics & KPIs (SQL Queries)
         ↓
 Visualization Dashboard (Power BI)
+```
 
 
 ⚙️ DATA PIPELINE
-
+```
 CSV Dataset
    ↓
 Data Import into MySQL
@@ -123,7 +124,7 @@ Data Warehouse Loading (Fact & Dimension tables)
 KPI Queries & Analysis
    ↓
 Power BI Dashboard
-
+```
 
 🛠 TECH STACK
 
@@ -195,13 +196,13 @@ The script includes:
 
 The data warehouse enables fast calculation of critical metrics.
 
-1.Total Orders
+1.TOTAL ORDERS
 
 SELECT COUNT(*) AS total_orders
 
 FROM fact_swiggy_orders;
 
-2.Total Revenue
+2.TOTAL REVENUE
 
 SELECT ROUND(SUM(price_inr)/1000000,2)
 
@@ -209,13 +210,13 @@ AS total_revenue_inr_million
 
 FROM fact_swiggy_orders;
 
-3.Average Dish Price
+3.AVERAGE DISH PRICE
 
 SELECT ROUND(AVG(price_inr),2)
 
 FROM fact_swiggy_orders;
 
-4.Average Rating
+4.AVERAGE RATING
 
 SELECT ROUND(AVG(rating),2)
 
@@ -225,7 +226,7 @@ FROM fact_swiggy_orders;
 🔍 BUSINESS ANALYSIS PERFORMED
 
 
-📅 Time Analysis
+📅 TIME ANALYSIS
 
 -Monthly order trends
 
@@ -236,7 +237,7 @@ FROM fact_swiggy_orders;
 -Orders by day of week
 
 
-📍 Location Insights
+📍 LOCATION INSIGHTS
 
 -Top cities by order volume
 
@@ -245,7 +246,7 @@ FROM fact_swiggy_orders;
 -Revenue contribution by state
 
 
-🍽 Food Performance
+🍽 FOOD PERFORMANCE
 
 -Top restaurants by orders
 
@@ -254,7 +255,7 @@ FROM fact_swiggy_orders;
 -Category performance
 
 
-💰 Customer Spending Behavior
+💰 CUSTOMER SPENDING BEHAVIOUR
 
 Orders analyzed across price ranges:
 
@@ -268,7 +269,7 @@ Orders analyzed across price ranges:
 
 -₹500+
 
-⭐ Rating Insights
+⭐ RATING INSIGHTS
 
 -Distribution of dish ratings
 
@@ -329,9 +330,9 @@ purchasing decisions.
 
  SAPNA MEHRA
 
-Aspiring Data Analyst / Data Engineer
+Aspiring BUSINESS ANALYST / DATA ANALYST
 
-Skills:
+SKILLS:
 
 -SQL
 
