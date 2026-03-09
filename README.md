@@ -171,6 +171,12 @@ Contains:
 
 This structure improves query performance and scalability.
 
+## Data Model (ER Diagram)
+
+The following ER diagram represents the dimensional data model designed for analytical reporting.
+
+![ER Diagram](images/star_schema_swiggy_er.png)
+
 
 📂 SQL IMPLEMENTATION
 
