@@ -173,7 +173,7 @@ This structure improves query performance and scalability.
 
 ## Data Model (ER Diagram)
 
-The following ER diagram represents the dimensional data model designed for analytical reporting.
+The ER diagram represents a star schema data model with fact_swiggy_orders as the central fact table linked to dimension tables for restaurant, date, category, location, and dish, enabling efficient analytical queries.
 
 ![ER Diagram](images/star_schema_swiggy_er.png)
 
@@ -284,6 +284,8 @@ Orders analyzed across price ranges:
 
 
 📊 POWER BI DASHBOARD
+
+
 
 ✔Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
 
