@@ -175,7 +175,7 @@ This structure improves query performance and scalability.
 
 The ER diagram represents a star schema data model with fact_swiggy_orders as the central fact table linked to dimension tables for restaurant, date, category, location, and dish, enabling efficient analytical queries.
 
-![ER Diagram](images/star_schema_swiggy_er.png)
+![ER Diagram](images/star_schema_swiggy_ER.png)
 
 
 📂 SQL IMPLEMENTATION
