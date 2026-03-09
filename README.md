@@ -127,15 +127,16 @@ Power BI Dashboard
 ```
 
 🛠 TECH STACK
-```
+
 Tech Stack
-||Tools	||Techniques / Usage
-||MySQL 8.0||Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation
-||SQL	||Joins, aggregations, KPI queries, duplicate detection, and analytical business queries
-||Star Schema Modeling	||Fact and dimension table design for analytical data warehouse
-||Microsoft Power BI	||Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics
-||github   ||Repository hosting and project documentation
-```
+|Tools	|Techniques / Usage
+|-------|-------------------|
+|MySQL 8.0|Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation|
+|SQL	|Joins, aggregations, KPI queries, duplicate detection, and analytical business queries|
+|Star Schema Modeling	|Fact and dimension table design for analytical data warehouse|
+|Microsoft Power BI	|Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics|
+|github   |Repository hosting and project documentation|
+
 
 🏗 DATA WAREHOUSE DESIGN
 
