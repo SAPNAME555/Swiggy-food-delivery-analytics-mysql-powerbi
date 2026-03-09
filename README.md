@@ -14,7 +14,6 @@ The pipeline includes:
 
 -Dimensional modeling
 
-
 -Data warehouse design
 
 -KPI generation
@@ -39,8 +38,7 @@ Food delivery platforms like Swiggy generate large volumes of data.To scale effi
 📌Are there seasonal or time-based ordering trends?
 
 However, raw transactional data is not optimized for analytics.
-
--Without proper data modeling:
+Without proper data modeling:
 
 -Queries become slow
 
@@ -68,7 +66,7 @@ This project solves the problem by building a data warehouse architecture and ge
 
 -Source: Food delivery dataset (Swiggy)
 
--Records: 197,000+
+-Raw Data: 197,000+
 
 -Structured Data: 1,65,000+
 
@@ -142,7 +140,7 @@ Tech Stack
 
 A Star Schema was created to optimize analytical queries.
 
-1.Dimension Tables
+1.DIMENSION TABLES
 
 1.dim_date
 
@@ -155,9 +153,9 @@ A Star Schema was created to optimize analytical queries.
 5.dim_dish
 
 
-2.Fact Table
+2.FACT TABLE
 
-2.fact_swiggy_orders
+1.fact_swiggy_orders
 
 Contains:
 
