@@ -127,7 +127,7 @@ Power BI Dashboard
 ```
 
 🛠 TECH STACK
-
+```
 Tech Stack
 ||Tools	||Techniques / Usage
 ||MySQL 8.0||Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation
@@ -135,7 +135,7 @@ Tech Stack
 ||Star Schema Modeling	||Fact and dimension table design for analytical data warehouse
 ||Microsoft Power BI	||Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics
 ||github   ||Repository hosting and project documentation
-
+```
 
 🏗 DATA WAREHOUSE DESIGN
 
