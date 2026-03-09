@@ -285,7 +285,7 @@ Orders analyzed across price ranges:
 
 📊 POWER BI DASHBOARD
 
-
+![swiggy dashboard](images/swiggy_dashboard.png)
 
 ✔Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
 
