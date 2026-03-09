@@ -1,4 +1,5 @@
 🍔Swiggy Food Delivery Analytics
+
 Data Warehouse | SQL Analytics | Business Intelligence
 
 📌 PROJECT OVERVIEW
@@ -211,9 +212,9 @@ FROM fact_swiggy_orders;
 
 2.TOTAL REVENUE
 
-SELECT ROUND(SUM(price_inr)/1000000,2)
+SELECT ROUND(SUM(price_inr)/1000000,2) 
 
-AS total_revenue_inr_million
+AS total_revenue_inr_million 
 
 FROM fact_swiggy_orders;
 
@@ -225,7 +226,7 @@ FROM fact_swiggy_orders;
 
 4.AVERAGE RATING
 
-SELECT ROUND(AVG(rating),2)
+SELECT ROUND(AVG(rating),2) 
 
 FROM fact_swiggy_orders;
 
@@ -305,7 +306,7 @@ purchasing decisions.
 
 ✔Food delivery demand is highly concentrated in major urban cities, which contribute the largest share of both orders and revenue.
 
-✔A small group of top-performing restaurants captures a significant portion of total orders, highlighting strong competition and the importance of ratings and pricing strategies.
+✔A small group of top-performing restaurants captures a significant portion of total orders, highlighting strong competition and the importance of ratings and pricing strategies like McDonald's and KFC.
 
 ✔Certain cuisine categories consistently attract higher order volumes and maintain strong customer ratings, indicating clear consumer preferences.
 
