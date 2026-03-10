@@ -304,9 +304,9 @@ Orders analyzed across price ranges:
 ✔Mid-range priced meals (₹100–₹299) generate the highest order volume, indicating that affordability plays a major role in customer 
 purchasing decisions.
 
-✔Food delivery demand is highly concentrated in major urban cities, which contribute the largest share of both orders and revenue.
+✔Food delivery demand is highly concentrated in major urban cities BENGALURU and MUMBAI, which contribute the largest share of both orders and revenue.
 
-✔A small group of top-performing restaurants captures a significant portion of total orders, highlighting strong competition and the importance of ratings and pricing strategies like McDonald's and KFC.
+✔A small group of top-performing restaurants captures a significant portion of total orders, highlighting strong competition and the importance of ratings and pricing strategies like McDONALD'S and KFC.
 
 ✔Certain cuisine categories consistently attract higher order volumes and maintain strong customer ratings, indicating clear consumer preferences.
 
