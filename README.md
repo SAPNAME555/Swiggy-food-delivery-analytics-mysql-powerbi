@@ -130,20 +130,20 @@ Power BI Dashboard
 🛠 TECH STACK
 
 Tech Stack
-|Tools	|Techniques / Usage
-|-------|-------------------|
-|MySQL 8.0|Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation|
-|SQL	|Joins, aggregations, KPI queries, duplicate detection, and analytical business queries|
-|Star Schema Modeling	|Fact and dimension table design for analytical data warehouse|
-|Microsoft Power BI	|Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics|
-|Github   |Repository hosting and project documentation|
+|🛠️ Tools	|💻Techniques / Usage
+|------------------------|-------------------|
+|     MySQL 8.0     |Database creation, data cleaning, SQL querying, indexing, and data warehouse implementation|
+| SQl      |Joins, aggregations, KPI queries, duplicate detection, and analytical business queries|
+| Star Schema Modeling |Fact and dimension table design for analytical data warehouse|
+| Microsoft Power BI	 |Power BI data modeling, DAX calculations, KPI development, interactive dashboard analytics|
+| Github           |Repository hosting and project documentation|
 
 
 🏗 DATA WAREHOUSE DESIGN
 
 A Star Schema was created to optimize analytical queries.
 
-1.DIMENSION TABLES
+📋1.DIMENSION TABLES
 
 1.dim_date
 
@@ -156,7 +156,7 @@ A Star Schema was created to optimize analytical queries.
 5.dim_dish
 
 
-2.FACT TABLE
+📋2.FACT TABLE
 
 1.fact_swiggy_orders
 
@@ -172,7 +172,7 @@ Contains:
 
 This structure improves query performance and scalability.
 
-## Data Model (ER Diagram)
+## 🗄️ Data Model (ER Diagram)
 
 The ER diagram represents a star schema data model with fact_swiggy_orders as the central fact table linked to dimension tables for restaurant, date, category, location, and dish, enabling efficient analytical queries.
 
@@ -204,13 +204,13 @@ The script includes:
 
 The data warehouse enables fast calculation of critical metrics.
 
-1.TOTAL ORDERS
+📈1.TOTAL ORDERS
 
 SELECT COUNT(*) AS total_orders
 
 FROM fact_swiggy_orders;
 
-2.TOTAL REVENUE
+📈2.TOTAL REVENUE
 
 SELECT ROUND(SUM(price_inr)/1000000,2) 
 
@@ -218,13 +218,13 @@ AS total_revenue_inr_million
 
 FROM fact_swiggy_orders;
 
-3.AVERAGE DISH PRICE
+📈3.AVERAGE DISH PRICE
 
 SELECT ROUND(AVG(price_inr),2)
 
 FROM fact_swiggy_orders;
 
-4.AVERAGE RATING
+📈4.AVERAGE RATING
 
 SELECT ROUND(AVG(rating),2) 
 
@@ -288,31 +288,31 @@ Orders analyzed across price ranges:
 
 ![swiggy dashboard](images/swiggy_dashboard.png)
 
-✔Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
+📋Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
 
-✔Implemented data modeling using relationships between fact and dimension tables.
+📋Implemented data modeling using relationships between fact and dimension tables.
 
-✔Developed DAX measures for KPIs such as Total Orders, Revenue, Average Price, and Ratings.
+📋Developed DAX measures for KPIs such as Total Orders, Revenue, Average Price, and Ratings.
 
-✔Enabled interactive filtering using slicers and visuals.
+📋Enabled interactive filtering using slicers and visuals.
 
 
 📌 KEY INSIGHTS
 
-✔Analysis of 165K+ food delivery transactions enabled evaluation of customer ordering behavior, restaurant performance, and pricing patterns across multiple cities.
+💡Analysis of 165K+ food delivery transactions enabled evaluation of customer ordering behavior, restaurant performance, and pricing patterns across multiple cities.
 
-✔Mid-range priced meals (₹100–₹299) generate the highest order volume, indicating that affordability plays a major role in customer 
+💡Mid-range priced meals (₹100–₹299) generate the highest order volume, indicating that affordability plays a major role in customer 
 purchasing decisions.
 
-✔Food delivery demand is highly concentrated in major urban cities BENGALURU and MUMBAI, which contribute the largest share of both orders and revenue.
+💡Food delivery demand is highly concentrated in major urban cities BENGALURU and MUMBAI, which contribute the largest share of both orders and revenue.
 
-✔A small group of top-performing restaurants captures a significant portion of total orders, highlighting strong competition and the importance of ratings and pricing strategies like McDONALD'S and KFC.
+💡A small group of top-performing restaurants captures a significant portion of total orders, highlighting strong competition and the importance of ratings and pricing strategies like McDONALD'S and KFC.
 
-✔Certain cuisine categories consistently attract higher order volumes and maintain strong customer ratings, indicating clear consumer preferences.
+💡Certain cuisine categories consistently attract higher order volumes and maintain strong customer ratings, indicating clear consumer preferences.
 
-✔Dish-level analysis shows that a limited number of popular dishes drive repeat customer orders, suggesting the importance of optimized menu offerings.
+💡Dish-level analysis shows that a limited number of popular dishes drive repeat customer orders, suggesting the importance of optimized menu offerings.
 
-✔Customer ratings are predominantly above 4 stars, indicating generally high service quality across restaurants on the platform.
+💡Customer ratings are predominantly above 4 stars, indicating generally high service quality across restaurants on the platform.
 
 
 🎯 SKILLS DEMONSTRATED
@@ -342,7 +342,7 @@ purchasing decisions.
 
 Aspiring BUSINESS ANALYST / DATA ANALYST
 
-SKILLS:
+🧠 SKILLS:
 
 -SQL
 
