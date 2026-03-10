@@ -183,7 +183,7 @@ The ER diagram represents a star schema data model with fact_swiggy_orders as th
 
 The complete SQL implementation is available here:
 
-📄 SQL Script: swiggy_data_pro1.mysql
+[View SQL File](data/swiggy_data_pro1.mysql)
 
 The script includes:
 
