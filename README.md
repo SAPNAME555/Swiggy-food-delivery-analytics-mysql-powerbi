@@ -1,6 +1,9 @@
-🍔Swiggy Food Delivery Analytics
+# 🍔Swiggy Food Delivery Analytics
 
 Data Warehouse | SQL Analytics | Business Intelligence
+## 📊 Power Bi Dashboard
+
+![Dashboard](images/swiggy_dashboard.png)
 
 📌 PROJECT OVERVIEW
 
@@ -286,7 +289,7 @@ Orders analyzed across price ranges:
 
 📊 POWER BI DASHBOARD
 
-![swiggy dashboard](images/swiggy_dashboard.png)
+![swiggy dashboard](images/working_dashboard.png)
 
 📋Built an interactive dashboard in Microsoft Power BI for order and revenue analysis.
 
