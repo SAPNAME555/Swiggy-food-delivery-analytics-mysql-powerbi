@@ -343,6 +343,8 @@ purchasing decisions.
 
  SAPNA MEHRA
 
+📧 sapnamehra232@gmail.com 🔗 LinkedIn: https://www.linkedin.com/in/sapna-mehra-288794335
+
 Aspiring BUSINESS ANALYST / DATA ANALYST
 
 🧠 SKILLS:
